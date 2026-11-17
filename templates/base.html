@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}My Static Site{% endblock %}</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><strong>Home</strong></a>
+      {% for p in pages %}
+        <a href="{{ p.url }}">{{ p.metadata.title }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

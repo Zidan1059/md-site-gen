@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ page.metadata.title }}{% endblock %}
+{% block content %}
+  <article>
+    <h1>{{ page.metadata.title }}</h1>
+    {% if page.metadata.date %}<p class="meta">{{ page.metadata.date }}</p>{% endif %}
+    {{ page.content | safe }}
+  </article>
+{% endblock %}

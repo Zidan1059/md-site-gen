@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}All Posts{% endblock %}
+{% block content %}
+  <h1>Pages</h1>
+  <ul>
+    {% for p in pages %}
+      <li>
+        <a href="{{ p.url }}">{{ p.metadata.title }}</a>
+        {% if p.metadata.date %}<span> — {{ p.metadata.date }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

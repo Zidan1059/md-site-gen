@@ -1,0 +1,29 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #1f2937;
+}
+nav {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #2563eb;
+}
+pre {
+  background: #f3f4f6;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+.meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
